@@ -12,10 +12,8 @@ class DiceViewModel : ViewModel() {
     val uiState: StateFlow<DiceUiState> = _uiState.asStateFlow()
 
     init {
-        Log.d("View Model", "init Called !")
         Logic()
     }
-
     fun Logic() {
         Log.d("View Model", "Button Clicked !")
         val random = (1..6).random()
